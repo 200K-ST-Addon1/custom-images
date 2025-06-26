@@ -1,49 +1,41 @@
+os: linux
+language: generic
+dist: focal
+
 jobs:
   include:
-    - stage: "Test"
-      name: "Use custom image 2305-image3"
+    - stage: "Tests"
+      name: "Create custom image 1"
       vm:
-        use:
+        create:
           name: 200K-ST-Addon1-i2
-
-    - stage: "Test"
-      name: "Use custom image 2305-image4"
+      script:
+        - echo "Running Job 1"
+    - stage: "Tests"
+      name: "Create custom image 2"
       vm:
-        use:
+        create:
           name: 200K-ST-Addon1-i3
-
-    - stage: "Test"
-      name: "Use custom image 2305-image5"
+      script:
+        - echo "Running Job 2"
+    - stage: "Tests"
+      name: "Create custom image 3"
       vm:
-        use:
+        create:
           name: 200K-ST-Addon1-i4
-
-    - stage: "Test"
-      name: "Use custom image 2605-image"
+      script:
+        - echo "Running Job 3"
+    - stage: "Tests"
+      name: "Create custom image 4"
       vm:
-        use:
+        create:
           name: 200K-ST-Addon1-i5
-
-    - stage: "Test"
-      name: "Use custom image 2705-image"
+      script:
+        - echo "Running Job 4"
+    - stage: "Tests"
+      name: "Create custom image 5"
       vm:
-        use:
+        create:
           name: 200K-ST-Addon1-i6
-
-    - stage: "Test"
-      name: "Use custom image 2705-image3"
-      vm:
-        use:
-          name: 200K-ST-Addon1-i7
-
-    - stage: "Test"
-      name: "Use custom image 2705-image4"
-      vm:
-        use:
-          name: 200K-ST-Addon1-i8
-
-    - stage: "Test"
-      name: "Use custom image 2705-image5"
-      vm:
-        use:
-          name: 200K-ST-Addon1-i9
+      script:
+        - echo "Running Job 5"
