@@ -8,34 +8,34 @@ jobs:
       name: "Create custom image 1"
       vm:
         create:
-          name: 200K-ST-Addon1-i2
+          name: 200K-ST-Addon1-i8
       script:
         - echo "Running Job 1"
     - stage: "Tests"
       name: "Create custom image 2"
       vm:
         create:
-          name: 200K-ST-Addon1-i3
+          name: 200K-ST-Addon1-i9
       script:
         - echo "Running Job 2"
     - stage: "Tests"
       name: "Create custom image 3"
       vm:
         create:
-          name: 200K-ST-Addon1-i4
+          name: 200K-ST-Addon1-i10
       script:
         - echo "Running Job 3"
     - stage: "Tests"
       name: "Create custom image 4"
       vm:
         create:
-          name: 200K-ST-Addon1-i5
+          name: 200K-ST-Addon1-i11
       script:
         - echo "Running Job 4"
     - stage: "Tests"
       name: "Create custom image 5"
       vm:
         create:
-          name: 200K-ST-Addon1-i6
+          name: 200K-ST-Addon1-i12
       script:
         - echo "Running Job 5"
